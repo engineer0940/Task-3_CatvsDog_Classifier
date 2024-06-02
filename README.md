@@ -36,13 +36,14 @@ The training was conducted with:
 - **Validation Split**: 30% of the training data was used for validation
 
 ## Results
-After training the model, the following results were observed without data augmentation and using a dropout layer (after 100 epochs):
+After training the model, the following results were observed:
+## Using a dropout layer (after 100 epochs):
 - **Test Accuracy** 91.74%
 - **Test Loss**: 0.3937
-With data augmntation  (Training stopped at 30 epochs)
+## With data augmntation  (Training stopped at 30 epochs)
 - **Test Accuracy** 89.99%
 - **Test Loss**: 0.26
-With L2 regularization (Model did not converge)
+## With L2 regularization (Model did not converge after 100 epochs)
 - **Test Accuracy** 50.06%
 - **Test Loss**: 0.75
 Despite the use of data augmentation, there was no significant improvement in the model's performance. This indicates that the dataset was already sufficiently diverse or that the augmentation techniques used were not effective in this context.
